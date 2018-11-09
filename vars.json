@@ -1,0 +1,4 @@
+{
+  "ami_name": "amzn2-eks-managed-node",
+  "source_ami": "ami-0fd79ef6943734489"
+}
