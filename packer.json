@@ -2,7 +2,8 @@
   "variables": {
     "ami_name": "",
     "aws_access_key": "",
-    "aws_secret_key": ""
+    "aws_secret_key": "",
+    "local_ip": ""
   },
   "builders": [
     {
@@ -32,6 +33,7 @@
       "ssh_file_transfer_method": "sftp",
       "ssh_pty": true,
       "ssh_username": "ec2-user",
+      "temporary_security_group_source_cidrs": "{{user `local_ip`}}/32",
       "type": "amazon-ebs"
     }
   ],
